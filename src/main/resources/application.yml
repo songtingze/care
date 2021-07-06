@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://bj-cynosdbmysql-grp-94ctk06s.sql.tencentcdb.com:21171/shop?characterEncoding=utf-8
+    username: root
+    password: Stz123456
+mybatis:
+  type-aliases-package: com.example.care.entity
+  mapper-locations: classpath:mybatis/dao/*.xml
+#pagehelper分页插件配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+
+#logging:
+#  level:
+#    com.example.wdshoppingmall.dao: debug
